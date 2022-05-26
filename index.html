@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/calculator.png">
+    <meta name="description"
+        content="Use a calculadora de JOB´s para saber quanto cobrar por seu freela! Calcule quanto cobrar por hora de trabalho!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/mobile.css" media="screen and (max-width: 768px)">
+    <title>CALCULADORA DE JOB´S - Calcule sua hora de trabalho</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./img/calculadora.png" alt="ícone calculadora pagina inicial" class="navImg">
+        <nav class="menu">
+            <a href="https://www.instagram.com/devwebbrasil/"><img src="./img/instagram.png" alt="icone instagram" class="navImgg"></a>
+            <a href="https://www.youtube.com/channel/UCefqHZGWIr5I0Wm1KtC9SGQ"><img src="./img/youtube.png" alt="icone youtube" class="navImgg"></a>
+            <a href="https://github.com/DevWebBrasil"><img src="./img/github.png" alt="icone github" class="navImgg"></a>
+        </nav>
+
+    </header>
+
+    <main class="calculadora">
+        <section class="video">
+            <div class="videoResultado">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5LVqVcl9ICY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div id="resultado"></div>
+            </div>
+            <div class="form-index">
+                <div class="title">
+                    <H1 class="title-1">CALCULADORA DE JOB'S</H1>
+                    <h3 class="title-2">Calcule sua hora de trabalho</h3>
+                </div>
+                <input type="number" id="dayTime" name="dayTime" placeholder="" class="inputBox" required>
+                <label for="dayTime">Quantas horas você pretende trabalhar por dia nesse projeto?</label>
+                <br>
+                <input type="number" id="dayMonth" name="dayMonth" placeholder="" class="inputBox" required>
+                <label for="dayMonth">Quantos dias pretende trabalhar no decorrer do seu mês?</label>
+                <br>
+                <input type="number" id="spends" name="spends" placeholder="" class="inputBox" required>
+                <label for="spends">Agora, me fale aqui, o TOTAL das suas depesas fixas em um mês: Aluguel, água, luz,
+                    alimentação, etc...</label>
+                <br>
+                <input type="number" id="equipament" name="equipament" placeholder="" class="inputBox" required>
+                <label for="equipament">E por último, informe o valor total do seu equipamento, levando em consideração
+                    desde o
+                    seu pc, até os
+                    softwares pagos que você utiliza</label>
+                <br>
+                <label for="lucro">Qual a porcentagem de lucro, que você deseja ter em cima da hora de trabalho?</label>
+                <select name="lucro" id="percent" class="select" required>
+                    <option value="" disabled>Selecione a %</option>
+                    <option value="30" selected>30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                </select>
+                <br>
+
+                <div class="submit">
+                    <input type="submit" onclick="total()" class="customButton" value="Calcular Agora">
+                </div>
+
+            </div>
+
+        </section>
+        <section></section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <Script src="script.js"></Script>
+</body>
+
+</html>
